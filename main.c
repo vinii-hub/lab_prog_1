@@ -2,8 +2,10 @@
 #include <stdlib.h>
 //#include "clientes.h"//colocar sempre em aspas biblioteca criada
 
-#define QTD_CLIENTE 10
-#define QTD_PRODUTOS 10
+#define QTD_CLIENTE 100
+#define QTD_PRODUTOS 100
+
+typef 
 
 void insere_produto();
 void insere_clientes();
@@ -101,4 +103,3 @@ void listar_produtos(){ //listas = imprimi-r
 
     }
 }
-kasndjknasjkdnajksndjk
