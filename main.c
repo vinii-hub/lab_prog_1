@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
+<<<<<<< HEAD
 #define MAX_CLI 50
 #define MAX_PROD 10
 #define MAX_REGS 100
+=======
+#define QTD_CLIENTE 100
+#define QTD_PRODUTOS 100
+
+typef 
+>>>>>>> ee418bc8598b30a54122ccd0807875997352c93f
 
 typedef struct {
     int codigo;
@@ -291,4 +298,63 @@ void menuPrincipal() {
 int main() {
     menuPrincipal();
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+
+void insere_clientes(){
+     int opcao;
+    if (index_cliente >= QTD_CLIENTE){
+        printf("Limite de clientes atingido!\n\n");
+    }else{
+        printf("insira o cliente: \t");
+        scanf("%s", clientes[index_cliente]);
+        index_cliente++;   //index_cliente = index_cliente + 1;
+
+        printf("Deseja inserir mais clientes?\n");
+        printf("1 - SIM\n");
+        printf("2 - NÃO\n");
+        scanf("%d", &opcao);
+
+        if (opcao == 1){
+            insere_clientes();
+        }
+    }
+}
+
+void listar_clientes (){ //listas = imprimi-r
+    int i;
+    for (i = 0; i < index_cliente; i++){
+        printf("Cliente %d: %s\n\n", (i+1), clientes[i]);
+    }
+
+}
+
+void insere_produto(){
+int opcao;
+    if (index_cliente2 >= 10){
+    printf ("Limite de produtos atingido!\n\n");
+    }else{
+    printf ("insira o produto: \t");
+    scanf("%s", produtos[index_cliente2]);
+    index_cliente2++;
+        printf("Deseja inserir mais produtos?\n");
+        printf("1 - SIM\n");
+        printf("2 - NÃO\n");
+        scanf("%d", &opcao);
+
+        if (opcao == 1){
+            insere_produto();
+        }
+    }
+}
+
+void listar_produtos(){ //listas = imprimi-r
+    int j;
+    for (j = 0; j < index_cliente2; j++){
+        printf("produtos %d: %s\n\n", (j+1), produtos[j]);
+
+    }
+}
+>>>>>>> ee418bc8598b30a54122ccd0807875997352c93f
